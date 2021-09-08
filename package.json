@@ -1,0 +1,23 @@
+{
+  "name": "desafioframe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mccavaloko/desafioframe.git"
+  },
+  "author": "Miguel Maisena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mccavaloko/desafioframe/issues"
+  },
+  "homepage": "https://github.com/mccavaloko/desafioframe#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3"
+  }
+}
