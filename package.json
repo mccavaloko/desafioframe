@@ -18,6 +18,9 @@
   "homepage": "https://github.com/mccavaloko/desafioframe#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^5.3.3"
-  }
+    "express-handlebars": "^5.3.3",
+    "node-fetch": "^3.0.0",
+    "nodemon": "^2.0.12"
+  },
+  "type": "module"
 }
