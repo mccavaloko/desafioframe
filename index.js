@@ -3,11 +3,16 @@ import express, { response } from "express";
 const app = express();
 import handlebars from "express-handlebars";
 import fetch from "node-fetch";
+import path,{ dirname } from "path"
+import { fileURLToPath } from 'url';
 
 //config
     //template engine
     app.engine('handlebars', handlebars({defaultLayout:"main"}));
     app.set("view engine","handlebars");
+    //Public folder
+    const __dirname = dirname(fileURLToPath(import.meta.url));
+    app.use(express.static(path.join(__dirname, '/public/')));
 
 //abrindo página inicial
 app.get("/", (req,res)=>{

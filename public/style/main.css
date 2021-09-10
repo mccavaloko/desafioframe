@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+nav{
+    background-color: #54687d;    
+     font-family: "Open Sans";
+}
+
+body{
+    background-color: black;
+}
+
+.image:hover{
+    opacity: 50%;
+}    
+
+.image{
+    transition: 1s;
+}
+
+.navbar-nav{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+footer {
+    background-color: #54687d;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
