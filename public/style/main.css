@@ -1,44 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
-
-nav{
-    background-color: #54687d;    
-     font-family: "Open Sans";
+nav {
+  background-color: #54687d;
+  font-family: "Open Sans";
 }
 
-.section1{
+button {
+  font-family: "Typold";
+  font-size: 36pt;
+}
+
+.hpb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #1db954;
+  color: white;
+  font-size: 16px;
+  padding: 16px 70px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition-duration: 0.2s;
+  border-radius: 50px;
+}
+
+.hpb:hover {
+  background-color: #259f50;
+  color: white;
+  padding: 10px 60px;
+}
+
+.section1 {
   display: flex;
   height: inherit;
-  background-image: url("/imagens/img-1.jpg");
   background-size: cover;
   justify-content: center;
   align-items: flex-end;
+  background-image: url("/imagens/img-1.jpg");
 }
 
-.section2{
-    background-image: url("/imagens/img-2.jpg");
-    background-size: cover;
-  }
+.section2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imagens/img-2.jpg");
+ background-size: cover;
+  justify-content: center;
+  display: flex;
+  width: inherit;
+}
 
-  .section3{
-    background-image: url("/imagens/img-3.jpg");
-    background-size: cover;
-  }
+.section3 {
+  background-image: url("/imagens/img-3.jpg");
+  background-size: cover;
+}
 
-  .section4{
-    background-image: url("/imagens/img-4.jpg");
-    background-size: cover;
-  }
+.section4 {
+  background-image: url("/imagens/img-4.jpg");
+  background-size: cover;
+}
 
-.navbar-nav{
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
+.navbar-nav {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
 }
 
 footer {
-    background-color: #54687d;
-    display: flex;
-    justify-content: center;
-    margin-top: auto;
+  background-color: #54687d;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
 }
-
