@@ -5,17 +5,29 @@ nav{
      font-family: "Open Sans";
 }
 
-body{
-    background-color: black;
+.section1{
+  display: flex;
+  height: inherit;
+  background-image: url("/imagens/img-1.jpg");
+  background-size: cover;
+  justify-content: center;
+  align-items: flex-end;
 }
 
-.image:hover{
-    opacity: 50%;
-}    
+.section2{
+    background-image: url("/imagens/img-2.jpg");
+    background-size: cover;
+  }
 
-.image{
-    transition: 1s;
-}
+  .section3{
+    background-image: url("/imagens/img-3.jpg");
+    background-size: cover;
+  }
+
+  .section4{
+    background-image: url("/imagens/img-4.jpg");
+    background-size: cover;
+  }
 
 .navbar-nav{
     display: flex;
