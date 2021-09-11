@@ -1,13 +1,28 @@
-$(document).ready(function() {
-	$('#pagepiling').pagepiling();
-	$(".navbar").hide()
-	$(".footer").hide()
+//Ativando o pagepiling na página inicial
+$(document).ready(() => {
+  $("#pagepiling").pagepiling();
+  $(".navbar").hide();
+  $(".footer").hide();
+  $(".fa-check").hide();
 });
 
-$(".hpb").hover(function () {
-		// over
-	$(".section2").css("background-color" , 'rgba(0,0,0,0.5)');
-	}, function () {
-		$(".section1").css("transition(0.4)")
-	}
+$(".todos-btn").hover(
+  () => {
+    // over
+    $(".fa-times")
+      .stop("fade", true, true)
+      .delay(300, "fade")
+      .slideUp(() => {
+        $(".fa-check").slideDown();
+      });
+  },
+  () => {
+    // out
+    $(".fa-check")
+      .stop("fade", true, true)
+      .delay(300, "fade")
+      .slideUp(() => {
+        $(".fa-times").slideDown();
+      });
+  }
 );
