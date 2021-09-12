@@ -9,20 +9,12 @@ $(document).ready(() => {
 $(".todos-btn").hover(
   () => {
     // over
-    $(".fa-times")
-      .stop("fade", true, true)
-      .delay(300, "fade")
-      .slideUp(() => {
-        $(".fa-check").slideDown();
-      });
+    $(".fa-check").show();
+    $(".fa-times").hide();
   },
-  () => {
+  function () {
     // out
-    $(".fa-check")
-      .stop("fade", true, true)
-      .delay(300, "fade")
-      .slideUp(() => {
-        $(".fa-times").slideDown();
-      });
+    $(".fa-times").show();
+    $(".fa-check").hide();
   }
 );

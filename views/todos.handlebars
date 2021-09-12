@@ -1,12 +1,18 @@
-<h1>To-Dos</h1>
-{{#each todos}}
-<br>
-<b1>Title:</b1>
-<b4>{{title}}</b4>
-<br>
-<b1>UserId:</b1>
-<b4>{{userId}}</b4>
-<br>
-<b1>ID:</b1>
-<b4>{{id}}</b4>
-{{/each}}
+<div class="table-div container-fluid">
+  <div>
+    <table class="table table-dark table-bordered">
+    <thead>
+    <thead>
+        <tr>
+        <th scope="col">UserID</th>
+        <th scope="col">ID</th>
+        <th scope="col">Title</th>
+        <th scope="col">Completed</th>
+    </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+        </table>
+    </div>
+</div>
+<script src="scripts/todos.js"></script>

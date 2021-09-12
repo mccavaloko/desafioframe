@@ -1,6 +1,6 @@
 /* Importando fontes */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
-*{
+* {
   font-family: "Open Sans";
 }
 
@@ -13,6 +13,53 @@ nav {
   display: flex;
   width: 100%;
   justify-content: flex-end;
+}
+
+body {
+  max-width: 100vw;
+  width: 100%;
+  height: 100vh;
+  background-color: #29333d;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*Formatando table*/
+.table-div {
+  overflow-x: auto;
+  height: 80%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table {
+  height: 100%;
+}
+
+.table-div div {
+  overflow: auto;
+  display: flex;
+  height: 97%;
+  max-width: 90%;
+  min-width: 600px;
+}
+
+.table-div thead {
+  white-space: nowrap;
+}
+
+.fas {
+  font-size: 20px;
+}
+
+@media (max-width: 599px) {
+  .table-div {
+    justify-content: unset;
+  }
 }
 
 /*Formatando botões no geral*/
@@ -45,11 +92,10 @@ button {
   transition-duration: 0.2s;
   -webkit-filter: drop-shadow(0px 0px 5px rgba(233, 89, 80, 0.6));
   filter: drop-shadow(0px 0px 5px rgba(233, 89, 80, 0.6));
-  
 }
 
-.post-btn:after{
-  content: '';
+.post-btn:after {
+  content: "";
   width: 20px;
   height: 20px;
   background-color: #ed1b24;
@@ -63,7 +109,7 @@ button {
 }
 
 .post-btn:hover:after {
-  content: '';
+  content: "";
   width: 20px;
   height: 20px;
   background-color: #eb6b71;
@@ -86,19 +132,19 @@ button {
   background-color: rgb(243, 38, 38);
 }
 
-.fa-times{
+.fa-times {
   padding-right: 5px;
 }
 
-.post-btn:hover{
+.post-btn:hover {
   color: whitesmoke;
   background-color: #eb6b71;
   padding: 13px 65px;
   font-size: 13px;
-  border: 2px solid pink
+  border: 2px solid pink;
 }
 
-.todos-btn:hover{
+.todos-btn:hover {
   background-color: rgb(13, 182, 13);
 }
 
@@ -112,7 +158,7 @@ button {
 /* Formatando sessões da página inicial */
 .section1 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url("/imagens/img-1.jpg");
+    url("/imagens/img-1.jpg");
   display: flex;
   height: inherit;
   background-size: cover;
@@ -121,7 +167,7 @@ button {
   flex-direction: column;
 }
 
-.text-homepage{
+.text-homepage {
   color: snow;
 }
 
@@ -133,7 +179,7 @@ button {
 
 .section2 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url("/imagens/img-2.jpg");
+    url("/imagens/img-2.jpg");
   display: flex;
   width: inherit;
   height: inherit;
@@ -145,7 +191,7 @@ button {
 
 .section3 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url("/imagens/img-3.jpg");
+    url("/imagens/img-3.jpg");
   background-size: cover;
   display: flex;
   width: inherit;
@@ -153,12 +199,11 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
 }
 
 .section4 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url("/imagens/img-4.jpg");
+    url("/imagens/img-4.jpg");
   background-size: cover;
   display: flex;
   width: inherit;
@@ -167,12 +212,14 @@ button {
   align-items: center;
   flex-direction: column;
 }
-
 
 /* Formatando footer */
 footer {
   background-color: #54687d;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: auto;
+  height: 20px;
+  font-size: 11px;
 }
