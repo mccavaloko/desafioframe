@@ -47,6 +47,6 @@ app.get("/to-dos", (req, res) => {
 });
 
 //Inicializando aplicação
-app.listen(8080, () => {
+app.listen(process.env.PORT || 8080, () => {
   console.log("Rodando na porta 8080");
 });
